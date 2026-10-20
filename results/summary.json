@@ -1,0 +1,101 @@
+{
+  "dysample": {
+    "metric": "Ultralytics uniform FP32 AP50-95, percentage units",
+    "validation": {
+      "D0": {
+        "seeds": [
+          {
+            "seed": 0,
+            "mAP50_percent": 31.559696090956546,
+            "mAP50_95_percent": 17.954591933920597
+          },
+          {
+            "seed": 1,
+            "mAP50_percent": 31.45421804834917,
+            "mAP50_95_percent": 17.833213643843738
+          },
+          {
+            "seed": 2,
+            "mAP50_percent": 31.743381998371206,
+            "mAP50_95_percent": 17.902449603346657
+          }
+        ],
+        "mean_mAP50_95_percent": 17.896751727036996,
+        "sample_sd_pp": 0.060889421670152516
+      },
+      "D1": {
+        "seeds": [
+          {
+            "seed": 0,
+            "mAP50_percent": 32.2188297682102,
+            "mAP50_95_percent": 18.4085350029806
+          },
+          {
+            "seed": 1,
+            "mAP50_percent": 31.68853700735459,
+            "mAP50_95_percent": 18.00475023185114
+          },
+          {
+            "seed": 2,
+            "mAP50_percent": 31.89848409048806,
+            "mAP50_95_percent": 18.03153787157993
+          }
+        ],
+        "mean_mAP50_95_percent": 18.14827436880389,
+        "sample_sd_pp": 0.22578993043780157
+      }
+    },
+    "test_dev": {
+      "D0": {
+        "seeds": [
+          {
+            "seed": 0,
+            "mAP50_percent": 25.450573208969384,
+            "mAP50_95_percent": 14.119075431148886
+          },
+          {
+            "seed": 1,
+            "mAP50_percent": 26.053573075712144,
+            "mAP50_95_percent": 14.476598834401551
+          },
+          {
+            "seed": 2,
+            "mAP50_percent": 25.8437507189212,
+            "mAP50_95_percent": 14.384858436733893
+          }
+        ],
+        "mean_mAP50_95_percent": 14.326844234094777,
+        "sample_sd_pp": 0.18568786107129173
+      },
+      "D1": {
+        "seeds": [
+          {
+            "seed": 0,
+            "mAP50_percent": 26.00097379724516,
+            "mAP50_95_percent": 14.506752492916853
+          },
+          {
+            "seed": 1,
+            "mAP50_percent": 25.931974963725335,
+            "mAP50_95_percent": 14.449445262277816
+          },
+          {
+            "seed": 2,
+            "mAP50_percent": 25.68616881969413,
+            "mAP50_95_percent": 14.306493759983391
+          }
+        ],
+        "mean_mAP50_95_percent": 14.42089717172602,
+        "sample_sd_pp": 0.10313648789174473
+      }
+    }
+  },
+  "limits": [
+    "Local converted VisDrone labels; not official VisDrone challenge scores.",
+    "test-dev has been examined in earlier research; it is a held-out split, not a fresh blind test.",
+    "Three seeds do not establish statistical significance.",
+    "Historical source snapshots may include later training/recovery utilities; no new training was performed for this publication.",
+    "C1 crop training is in progress and is excluded from successful milestones.",
+    "Weights, datasets, predictions, training logs, credentials, private environment files, paper PDFs and failed-candidate source projects are excluded."
+  ]
+}
