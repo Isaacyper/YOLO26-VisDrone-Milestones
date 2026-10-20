@@ -1,0 +1,74 @@
+{
+  "direction4": {
+    "metric": "Training CSV maximum AP50-95 row; not fresh FP32 evaluation",
+    "rows": [
+      {
+        "family": "B0",
+        "seed": 0,
+        "run": "b0_yolo26n_baseline_300e",
+        "completed_epochs": 268,
+        "best_epoch": 168,
+        "mAP50_95_percent": 18.262999999999998,
+        "mAP50_percent": 32.542
+      },
+      {
+        "family": "B0",
+        "seed": 1,
+        "run": "b0_yolo26n_baseline_300e_seed1",
+        "completed_epochs": 300,
+        "best_epoch": 249,
+        "mAP50_95_percent": 18.248,
+        "mAP50_percent": 32.748
+      },
+      {
+        "family": "B0",
+        "seed": 2,
+        "run": "b0_yolo26n_baseline_300e_seed2_rerun",
+        "completed_epochs": 300,
+        "best_epoch": 291,
+        "mAP50_95_percent": 18.051000000000002,
+        "mAP50_percent": 32.294
+      },
+      {
+        "family": "B2",
+        "seed": 0,
+        "run": "b2_direction4_bifpn_300e",
+        "completed_epochs": 300,
+        "best_epoch": 284,
+        "mAP50_95_percent": 18.529999999999998,
+        "mAP50_percent": 32.977000000000004
+      },
+      {
+        "family": "B2",
+        "seed": 1,
+        "run": "b2_direction4_bifpn_300e_seed1_rerun",
+        "completed_epochs": 300,
+        "best_epoch": 275,
+        "mAP50_95_percent": 18.519,
+        "mAP50_percent": 32.841
+      },
+      {
+        "family": "B2",
+        "seed": 2,
+        "run": "b2_direction4_bifpn_300e_seed2",
+        "completed_epochs": 300,
+        "best_epoch": 253,
+        "mAP50_95_percent": 18.188,
+        "mAP50_percent": 32.440000000000005
+      }
+    ],
+    "caveats": [
+      "B0 seed0 stopped at268/300; other listed runs300/300.",
+      "Use seed1 rerun and seed2 rerun replacements as listed; superseded abnormal/incomplete directories are not extra successful repeats.",
+      "Workers, resume histories and duration differ. These CSV results are not pooled with uniform FP32 tables."
+    ]
+  },
+  "limits": [
+    "Local converted VisDrone labels; not official VisDrone challenge scores.",
+    "test-dev has been examined in earlier research; it is a held-out split, not a fresh blind test.",
+    "Three seeds do not establish statistical significance.",
+    "Historical source snapshots may include later training/recovery utilities; no new training was performed for this publication.",
+    "C1 crop training is in progress and is excluded from successful milestones.",
+    "Weights, datasets, predictions, training logs, credentials, private environment files, paper PDFs and failed-candidate source projects are excluded."
+  ]
+}
