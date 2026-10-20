@@ -1,0 +1,73 @@
+{
+  "source_file_hashes_exact": true,
+  "credential_scan": "passed",
+  "datasets_weights_logs_excluded": true,
+  "cpu_model_builds": [
+    {
+      "id": "direction4-bifpn",
+      "parameters": 2604742,
+      "strides": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "cpu_inference_finite": true,
+      "output_shape": [
+        1,
+        84,
+        6
+      ],
+      "source_hashes_exact": true,
+      "credential_scan": "passed"
+    },
+    {
+      "id": "direction6-lightweight",
+      "parameters": 570992,
+      "strides": [
+        8.0,
+        16.0
+      ],
+      "cpu_inference_finite": true,
+      "output_shape": [
+        1,
+        80,
+        6
+      ],
+      "source_hashes_exact": true,
+      "credential_scan": "passed"
+    },
+    {
+      "id": "f2-residual-bifpn",
+      "parameters": 605812,
+      "strides": [
+        8.0,
+        16.0
+      ],
+      "cpu_inference_finite": true,
+      "output_shape": [
+        1,
+        80,
+        6
+      ],
+      "source_hashes_exact": true,
+      "credential_scan": "passed"
+    },
+    {
+      "id": "d1-dysample",
+      "parameters": 612020,
+      "strides": [
+        8.0,
+        16.0
+      ],
+      "cpu_inference_finite": true,
+      "output_shape": [
+        1,
+        80,
+        6
+      ],
+      "source_hashes_exact": true,
+      "credential_scan": "passed"
+    }
+  ],
+  "gpu_training_started_for_publication": false
+}

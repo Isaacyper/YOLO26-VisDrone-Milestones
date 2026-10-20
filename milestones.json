@@ -1,0 +1,119 @@
+[
+  {
+    "id": "direction4-bifpn",
+    "branch": "milestone/direction4-bifpn",
+    "variant": "B2",
+    "title": "方向四：原YOLO26上的残差加权BiFPN",
+    "model": "yolo26n_direction4.yaml",
+    "role": "结构探索里程碑；为后续轻量融合提供经验，精度证据CSV单列",
+    "result_group": "direction4",
+    "nwd_weight": 0,
+    "source_snapshot_kind": "current local source archive; original source files preserved byte-for-byte",
+    "files_copied": 370,
+    "created_at": "2026-10-20T02:18:08.519312+00:00",
+    "model_config": "configs/models/yolo26n_direction4.yaml",
+    "parameters": 2604742,
+    "structural_validation": {
+      "parameters": 2604742,
+      "strides": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "cpu_inference_finite": true,
+      "output_shape": [
+        1,
+        84,
+        6
+      ]
+    },
+    "tag": "v1-direction4-bifpn"
+  },
+  {
+    "id": "direction6-lightweight",
+    "branch": "milestone/direction6-lightweight",
+    "variant": "F0",
+    "title": "方向六：FCM/MKP轻量化对照",
+    "model": "yolo26n_direction6.yaml",
+    "role": "低参数、低延迟基线；不声称全指标超过原版",
+    "result_group": "fusion",
+    "nwd_weight": 0.2,
+    "source_snapshot_kind": "current local source archive; original source files preserved byte-for-byte",
+    "files_copied": 373,
+    "created_at": "2026-10-20T02:18:08.950084+00:00",
+    "model_config": "configs/models/yolo26n_direction6.yaml",
+    "parameters": 570992,
+    "structural_validation": {
+      "parameters": 570992,
+      "strides": [
+        8.0,
+        16.0
+      ],
+      "cpu_inference_finite": true,
+      "output_shape": [
+        1,
+        80,
+        6
+      ]
+    },
+    "tag": "v1-direction6-f0"
+  },
+  {
+    "id": "f2-residual-bifpn",
+    "branch": "milestone/f2-residual-bifpn",
+    "variant": "F2",
+    "title": "F2：方向六＋单层残差BiFPN",
+    "model": "yolo26n_direction46_single.yaml",
+    "role": "主要融合里程碑；三个种子验证及test-dev均值较F0提高，须同时报告速度和类别退化",
+    "result_group": "fusion",
+    "nwd_weight": 0.2,
+    "source_snapshot_kind": "current local source archive; original source files preserved byte-for-byte",
+    "files_copied": 373,
+    "created_at": "2026-10-20T02:18:09.244933+00:00",
+    "model_config": "configs/models/yolo26n_direction46_single.yaml",
+    "parameters": 605812,
+    "structural_validation": {
+      "parameters": 605812,
+      "strides": [
+        8.0,
+        16.0
+      ],
+      "cpu_inference_finite": true,
+      "output_shape": [
+        1,
+        80,
+        6
+      ]
+    },
+    "tag": "v1-f2"
+  },
+  {
+    "id": "d1-dysample",
+    "branch": "milestone/d1-dysample",
+    "variant": "D1",
+    "title": "D1：F2＋两处DySample",
+    "model": "yolo26n_direction46_single_dysample.yaml",
+    "role": "当前研究起点；验证均值提高，但小目标与test-dev收益不稳定，保留为研究候选",
+    "result_group": "dysample",
+    "nwd_weight": 0.2,
+    "source_snapshot_kind": "current local source archive; original source files preserved byte-for-byte",
+    "files_copied": 321,
+    "created_at": "2026-10-20T02:18:09.541477+00:00",
+    "model_config": "configs/models/yolo26n_direction46_single_dysample.yaml",
+    "parameters": 612020,
+    "structural_validation": {
+      "parameters": 612020,
+      "strides": [
+        8.0,
+        16.0
+      ],
+      "cpu_inference_finite": true,
+      "output_shape": [
+        1,
+        80,
+        6
+      ]
+    },
+    "tag": "v1-d1"
+  }
+]
